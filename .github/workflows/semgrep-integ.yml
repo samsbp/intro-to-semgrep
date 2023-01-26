@@ -25,3 +25,5 @@ jobs:
           SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
     - name: pythontest
       run: python .github/export_defectdojo.py
+      env: 
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN}}
