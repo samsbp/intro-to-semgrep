@@ -15,3 +15,5 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err))
+
+eval("ls"+inp)
