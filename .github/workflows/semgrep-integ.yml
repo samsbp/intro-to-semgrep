@@ -7,7 +7,7 @@ on:
     - .github/workflows/semgrep.yml
   schedule:
   - cron: '0 0 * * 0'
-name: Semgrep
+name: Semgrep-integ
 jobs:
   semgrep:
     name: Scan
