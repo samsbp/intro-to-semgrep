@@ -1,0 +1,17 @@
+on:
+  pull_request: {}
+  push:
+    branches:
+    - main
+    paths:
+    - .github/workflows/semgrep.yml
+  schedule:
+  - cron: '0 0 * * 0'
+name: Semgrep
+jobs:
+  semgrep:
+    name: Scan
+    runs-on: ubuntu-latest
+    steps:
+    - name: pythontest
+      run: python --version
